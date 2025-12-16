@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="法人AIレポート:株式会社 架空ホールディングス - AI生成レポート">
-<title>法人AIレポート:株式会社 架空ホールディングス </title>
+<meta name="description" content="【demo】法人AIレポート:株式会社 架空ホールディングス - AI生成レポート">
+<title>【demo】法人AIレポート:株式会社 架空ホールディングス </title>
 <style>
 :root {
 /* カラーシステム */
@@ -92,10 +92,8 @@ margin: 0 auto;
 height: 100vh;
 display: flex;
 flex-direction: column;
-padding: var(--space-4);
-/* 追加: コンテナ全体に余白 */
-gap: var(--space-4);
-/* 追加: 子要素間の余白 */
+padding: var(--space-4); /* 追加: コンテナ全体に余白 */
+gap: var(--space-4); /* 追加: 子要素間の余白 */
 }
 /* ========================================
 ヘッダー
@@ -128,8 +126,7 @@ font-weight: 400;
 background: var(--color-warning-bg);
 border: none;
 border-left: 4px solid var(--color-warning-border);
-border-radius: var(--border-radius-base);
-/* 追加 */
+border-radius: var(--border-radius-base); /* 追加 */
 flex-shrink: 0;
 /* margin削除 - gapで制御 */
 }
@@ -215,10 +212,8 @@ overflow-x: auto;
 -webkit-overflow-scrolling: touch;
 flex-shrink: 0;
 background: white;
-padding: var(--space-3) var(--container-padding-x);
-/* 上下の余白を追加 */
-border-radius: var(--border-radius-base) var(--border-radius-base) 0 0;
-/* 追加 */
+padding: var(--space-3) var(--container-padding-x); /* 上下の余白を追加 */
+border-radius: var(--border-radius-base) var(--border-radius-base) 0 0; /* 追加 */
 scrollbar-width: thin;
 scrollbar-color: var(--color-gray-600) var(--color-gray-100);
 }
@@ -279,18 +274,15 @@ color: white;
 flex: 1;
 overflow-y: auto;
 overflow-x: hidden;
-background: white;
-/* 変更: gray-50 → white */
-border-radius: 0 0 var(--border-radius-base) var(--border-radius-base);
-/* 追加 */
+background: white; /* 変更: gray-50 → white */
+border-radius: 0 0 var(--border-radius-base) var(--border-radius-base); /* 追加 */
 scrollbar-width: thin;
 scrollbar-color: var(--color-gray-600) var(--color-gray-100);
 }
 .tab-content {
 display: none;
 animation: fadeIn var(--transition-slow);
-padding: var(--space-6) var(--container-padding-x);
-/* 余白を増やす */
+padding: var(--space-6) var(--container-padding-x); /* 余白を増やす */
 }
 .tab-content.active {
 display: block;
@@ -318,17 +310,14 @@ transform: translateY(0);
 margin-bottom: var(--space-10);
 }
 .section:first-child {
-margin-top: 0;
-/* 追加: 最初のセクションの上余白を削除 */
+margin-top: 0; /* 追加: 最初のセクションの上余白を削除 */
 }
 .section-header {
 display: flex;
 justify-content: space-between;
 align-items: baseline;
-margin-top: 0;
-/* 変更: space-5 → 0 */
-margin-bottom: var(--space-6);
-/* 変更: space-5 → space-6 */
+margin-top: 0; /* 変更: space-5 → 0 */
+margin-bottom: var(--space-6); /* 変更: space-5 → space-6 */
 padding-bottom: var(--space-4);
 border-bottom: 3px solid var(--color-primary);
 }
@@ -618,6 +607,550 @@ background: var(--color-gray-700);
 </style>
 </head>
 <body>
-<!-- truncated content for brevity -->
+<div class="container">
+<header class="header" role="banner">
+<h1>【demo】法人AIレポート:株式会社 架空ホールディングス</h1>
+<p>作成日:<time datetime="2025-11-21">2025-11-21</time></p>
+</header>
+<details class="disclaimer" role="group" aria-label="注意事項">
+<summary class="disclaimer-summary">
+<span class="disclaimer-icon"> </span>
+【重要】AIレポートの利用に伴う注意事項
+<span class="disclaimer-toggle">▼</span>
+</summary>
+<div class="disclaimer-content">
+<p><strong>【本レポートの利用上の注意点】</strong></p>
+<ul>
+<li>本レポートにはAIが生成した情報が含まれています。</li>
+<li>AIは誤った内容を生成する場合がありますので、ご自身の経験や知識と照らし合わせながらご活用ください。</li>
+<li>本レポートには行内情報も含まれるため、業務外目的での使用や顧客への交付は厳禁です。</li>
+<li>また、本レポートは試行段階のためコンテンツ内容には誤りが含まれる可能性があります。</li>
+</ul>
+<p><strong>【問合せ先】</strong></p>
+<ul>
+<li>データソリューション部 大木雄介/雪篤流</li>
+</ul>
+</div>
+</details>
+<nav class="tabs" role="tablist" aria-label="レポートセクション">
+<button
+class="tab active"
+role="tab"
+aria-selected="true"
+aria-controls="tab1"
+id="tab-button-1"
+onclick="openTab(event, 'tab1')">
+企業・取引概要
+</button>
+<button
+class="tab "
+role="tab"
+aria-selected="false"
+aria-controls="tab2"
+id="tab-button-2"
+onclick="openTab(event, 'tab2')">
+財務分析
+</button>
+<button
+class="tab "
+role="tab"
+aria-selected="false"
+aria-controls="tab3"
+id="tab-button-3"
+onclick="openTab(event, 'tab3')">
+事業分析
+</button>
+<button
+class="tab "
+role="tab"
+aria-selected="false"
+aria-controls="tab4"
+id="tab-button-4"
+onclick="openTab(event, 'tab4')">
+業界情報
+</button>
+<button
+class="tab "
+role="tab"
+aria-selected="false"
+aria-controls="tab5"
+id="tab-button-5"
+onclick="openTab(event, 'tab5')">
+アクション提案
+</button>
+</nav>
+<div class="tab-content-wrapper">
+<article
+id="tab1"
+class="tab-content active"
+role="tabpanel"
+aria-labelledby="tab-button-1"
+aria-hidden="false">
+<section class="section">
+<header class="section-header">
+<h2 class="section-title">企業スナップショット</h2>
+</header>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">時空間移動サービスのパイオニア、創業5周年を迎えた革新企業</h3>
+<div class="card-content">
+<ul>
+<li>タイムトラベル旅行代理店株式会社は、2020年創業・2021年設立の時空間移動サービス企業である。資本金12億円、未上場企業として日本全国に時空ゲート拠点を展開している。</li>
+<li>過去・未来への旅行を「タイムセーフティ保証」で提供する業態を確立し、実店舗型ゲートとバーチャル時空体験の2軸でサービス網を拡大中である。</li>
+<li>2026年3月期第2四半期(2025年4月~9月)は、恐竜時代ツアーの人気により営業収益が前年比125.3%と好調に推移。通期業績予想を上方修正し、営業収益45億円(前期比115.8%)、営業利益8億円(同132.5%)を見込む。</li>
+<li>中期経営計画では3年間で8拠点の新規開設を目標に掲げ、2025年9月には大阪府に関西初の時空ゲート、12月には東京拠点に中世ヨーロッパ専門フロアを新設するなど積極的な拠点展開を実施してい
+る。</li>
+</ul>
+</div>
+</article>
+</div>
+</section>
+<section class="section">
+<header class="section-header">
+<h2 class="section-title">直近交渉状況</h2>
+</header>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">創業5周年記念行事を通じた関係強化(2025年11月)</h3>
+<div class="card-content">
+<ul>
+<li>2025年11月に開催された創業5周年記念式典において、当行支店長が祝辞を述べ、社長から「時空ゲート建設時の5億円協調融資(当行2.5億円)のおかげで安全な時間移動体制を構築できた」との発言があった。</li>
+<li>式典前の支店長訪問や記念タイムトラベル体験会への参加など、経営層同士の関係が良好である。設立当初からの取引関係を社長自身が認識しており、取引銀行としての信頼関係が確認された。</li>
+<li><strong>推奨アクション:</strong>5周年を契機とした関係深化のタイミングを活かし、中期経営計画で掲げる年間2拠点ペースの新規開設資金ニーズに対し、取引銀行として資金供給体制を提案すべきである。</li>
+</ul>
+</div>
+</article>
+<article class="card">
+<h3 class="card-title">積極的な拠点開設計画に伴う資金調達ニーズ(2025年11月)</h3>
+<div class="card-content">
+<ul>
+<li>2025年11月10日の第3四半期決算説明において、財務部長から「中計1年目で3年8拠点開設を目指すが今期の開設が少ない分、来期以降は年2拠点ペースで加速させる。資金調達は増加見込み」との説明があった。</li>
+<li>今期の追加調達はない様子だが、来期以降は大型の設備資金需要が見込まれる。1拠点あたり3億円規模の投資が想定され、年間2拠点なら6億円程度の資金ニーズが発生する。</li>
+<li><strong>推奨アクション:</strong>来期の開設計画が「計画段階」にある状況を踏まえ、早期に具体的な開設スケジュールと資金計画をヒアリングし、協調融資や長期設備資金の提案を先行して行うべきである。</li>
+</ul>
+</div>
+</article>
+<article class="card">
+<h3 class="card-title">異次元進出検討への情報提供支援(2025年11月)</h3>
+<div class="card-content">
+<ul>
+<li>2025年11月の面談で財務部長から「異次元進出は将来的に検討したいが、現時点では決定事項ではなく優先順位も低い」との説明があり、当行から情報収集支援を申し出た。</li>
+<li>パラレルワールド事業は提携解消済みだが、多次元空間への進出可能性を模索中との情報もあり、将来的な異次元展開意欲は持続している。ただし現時点では国内時空拠点が最優先である。</li>
+<li><strong>推奨アクション:</strong>当行の異次元ネットワークや多次元空間の旅行市場情報を定期的に提供し、将来的な異次元進出時の取引銀行としてのポジションを確保すべきである。現時点では情報提供に留め、具体化を待つスタンスが適切である。</li>
+</ul>
+</div>
+</article>
+</div>
+<section class="section">
+<header class="section-header">
+<h2 class="section-title">直近の当社ニュース</h2>
+</header>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">東京拠点リニューアルで中世ヨーロッパ専門フロア新設・営業時間拡大(2025年12月15日)</h3>
+<div class="card-content">
+<ul>
+<li>2025年12月15日、東京拠点が中世ヨーロッパ専門フロアを新設し営業時間を10:00~18:00から9:00~21:00へ拡大してリニューアルオープンした。騎士体験・城見学・中世祭り参加の取扱開始により、従来の恐竜時代・江戸時代に加え歴史愛好家向け機能を強化した。</li>
+<li>これは既存拠点への専門フロア導入第1号であり、今後他拠点への横展開が予想される。専門フロア強化により客単価向上と歴史ファン顧客獲得が期待でき、既存拠点売上の底上げ効果が見込まれる。</li>
+<li><strong>当行アクション:</strong>既存拠点リニューアル投資が本格化する可能性があり、改装資金ニーズが発生する。リニューアル計画の全体像をヒアリングし、運転資金・設備資金の両面で提案機会を創出すべきである。</li>
+</ul>
+</div>
+</article>
+<article class="card">
+<h3 class="card-title">通期業績予想の上方修正、営業利益8億円へ(2025年10月15日)</h3>
+<div class="card-content">
+<ul>
+<li>2025年10月15日、2026年3月期通期業績予想を上方修正し、営業収益45億円(前回予想比+5億円)、営業利益8億円(同+1億円)、当期純利益5億円(同+0.5億円)とした。恐竜時代ツアーの人気とタイムポイント還元企画の好調が寄与した。</li>
+<li>上期累計(4~9月)の既存拠点売上高は前年比112.3%、全拠点ベースで125.3%と堅調に推移。10月単月では既存拠点118.7%、全拠点132.1%とさらに加速しており、通期目標達成の蓋然性は高い。</li>
+<li><strong>当行アクション:</strong>業績好調を背景に財務体質が改善しており、格付見直しや金利条件改善の余地がある。決算確定後に財務分析を行い、取引条件の見直し提案を通じて取引深耕を図るべきである。</li>
+</ul>
+</div>
+</article>
+<article class="card">
+<h3 class="card-title">創業5周年記念「ウィンタータイムセール」開催(2025年12月15日~)</h3>
+<div class="card-content">
+<ul>
+<li>2025年12月15日から創業5周年記念として「ウィンタータイムセール」を全拠点で開催。恐竜時代・江戸時代・中世ヨーロッパ・未来都市ツアーを「特別価格」で販売し、例年以上の値引き幅で顧客還元を実施する。</li>
+<li>5周年記念施策として9月の「大感謝タイムフェスタ」に続く大型販促であり、年末商戦に向けた集客強化策である。短期的な利益率低下はあるものの、顧客ロイヤルティ向上と新規顧客獲得による中長期的な売上拡大効果が期待される。</li>
+<li><strong>当行アクション:</strong>大型セールに伴う運営資金や運転資金の一時的な増加ニーズが発生する可能性がある。年末商戦期の資金繰り状況を確認し、必要に応じて短期運転資金の機動的な供給体制を整えるべきである。</li>
+</ul>
+</div>
+</article>
+</div>
+</section>
+</article>
+<article
+id="tab2"
+class="tab-content "
+role="tabpanel"
+aria-labelledby="tab-button-2"
+aria-hidden="true">
+<section class="section">
+<header class="section-header">
+<h2 class="section-title">総合評価</h2>
+</header>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">総合評価: ◎</h3>
+<div class="card-content">
+<ul>
+<li>財務健全性は極めて良好。自己資本比率52.18%と高水準を維持し、有利子負債/EBITDA倍率2.1倍と返済能力も十分。</li>
+<li>ROE15%、営業利益率17.78%と収益性は高水準だが、既存拠点利用者数減少(前年比98.5%)が懸念材料。</li>
+<li>創業5周年を迎え、中期計画で3年8拠点開設を掲げるも、直近2期の開設ペースは鈍化。来期2拠点開設計画の実現性が鍵。</li>
+<li>融資判断上、資金繰りは問題なく、追加融資余力も十分。ただし、利用者数減少トレンドの改善策と新規拠点開設計画の進捗を注視すべき。</li>
+</ul>
+</div>
+</article>
+</div>
+</section>
+<section class="section">
+<header class="section-header">
+<h2 class="section-title">詳細</h2>
+</header>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">安全性: 高水準を維持、資金繰り良好</h3>
+<div class="card-content">
+<ul><li><strong>自己資本比率52.18%</strong>(前期48.3%)と上昇傾向。業界平均35%台を大きく上回り、財務基盤は盤石。</li><li><strong>流動比率23.45%</strong>と低水準だが、時空旅行業特有の運転資金回転の速さ(CCC▲0.02日)により資金繰りに問題なし。</li><li><strong>有利子負債18.7億円</strong>(前期15.2億円)に増加も、D/Eレシオ0.35倍と低水準。EBITDA倍率2.1倍で返済年数も短く、借入余力は十分。</li><li><strong>手元現預金3.2億円</strong>と前期比減少も、営業CF12.5億円と安定的なキャッシュ創出力あり。</li><li><strong>当行アクション</strong>:拠点開設資金需要に対し、協調融資含め積極対応可能。ただし、開設計画の進捗と既存拠点売上動向を四半期ごとにモニタリング。</li></ul>
+</div>
+</article>
+<article class="card">
+<h3 class="card-title">収益性: 高水準も既存拠点利用者数減が懸念</h3>
+<div class="card-content">
+<ul><li><strong>営業利益率17.78%</strong>(前期21.35%)、<strong>経常利益率17.33%</strong>(前期20.12%)と高水準維持も、前期比で低下。</li><li><strong>ROE15%</strong>(前期16%)、<strong>ROA8%</strong>(前期9%)と横ばい。業界平均(ROE10~14%、ROA5~8%)を上回り安定。</li><li><strong>売上高45億円</strong>(前期38.9億円、+15.68%)と好調も、<strong>既存拠点利用者数98.5%</strong>と前年割れ。利用者離れ傾向が利益率低下の一因。</li><li><strong>タイムセーフティ戦略</strong>で粗利率100%(売上原価計上なし)だが、販管費率82.22%(前期78.65%)と上昇。人件費・時空ゲート維持費増が収益圧迫。</li><li><strong>当行アクション</strong>:利用者数回復策(販促強化、VR体験活用)の進捗確認。販管費率85%超で利益圧迫リスク高まるため、四半期決算で注視。</li></ul>
+</div>
+</article>
+</div>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">成長性: 拠点開設計画の実現性が鍵</h3>
+<div class="card-content">
+<ul><li><strong>売上成長率+15.68%</strong>(前期+12.05%)と加速も、過去3年平均+18.2%と鈍化傾向。</li><li><strong>中期計画</strong>:3年8拠点開設目標(年平均2.7拠点)に対し、前期1拠点、今期1拠点と大幅未達。来期3拠点開設計画がほぼ決定と説明あり。</li><li><strong>成長ドライバー</strong>:小型拠点「タイムポート」業態拡大(関西初開設)、中世ヨーロッパ強化リニューアル(東京拠点)、大阪拠点新設(5年ぶり)など。</li><li><strong>M&A検討</strong>:統合報告書で言及も、過去実績なく実現性は未知数。異次元進出(パラレルワールド)も構想段階。</li><li><strong>当行アクション</strong>:来期3拠点開設の進捗を半期ごとに確認。開設資金需要(1拠点3~5億円想定)に対し、協調融資含め先行提案。M&A案件発生時は情報収集支援。</li></ul>
+</div>
+</article>
+<article class="card">
+<h3 class="card-title">効率性: 改善余地あり、時空ゲート管理が課題</h3>
+<div class="card-content">
+<ul><li><strong>総資産回転率</strong>:売上45億円÷総資産156億円=0.29回転と低水準。業界平均0.4~0.6回転を下回り、資産効率に改善余地。</li><li><strong>時空ゲート稼働率</strong>:平均78.5%と高水準だが、これは恐竜時代・江戸時代の人気ツアーによる数値。実態は中世ヨーロッパで低稼働、未来都市で高稼働のミックス。</li><li><strong>CCC▲0.02日</strong>と運転資金回転は速いが、前受金回転日数0日(計上なし)のため実態把握困難。</li><li><strong>拠点効率</strong>:拠点面積非開示だが、タイムポート小型拠点展開で拠点あたり売上向上を狙う。大型拠点は効率低下リスクあり。</li><li><strong>当行アクション</strong>:時空ゲート管理システム導入支援(DX推進)、運営効率化資金(自動チェックイン等)の提案。拠点効率改善策(リニューアル資金)の先行提案で関係深耕。</li></ul>
+</div>
+</article>
+</div>
+</section>
+</article>
+<article
+id="tab3"
+class="tab-content "
+role="tabpanel"
+aria-labelledby="tab-button-3"
+aria-hidden="true">
+<section class="section">
+<header class="section-header">
+<h2 class="section-title">SWOT</h2>
+</header>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">強み(Strengths)</h3>
+<div class="card-content">
+<ul><li>日本国内で高い市場シェアと知名度を確立、全国5拠点を展開</li><li>タイムセーフティ(安全保証)戦略による信頼性と顧客ロイヤルティ</li><li>恐竜時代から未来都市まで総合品揃えで「あらゆる時代に行ける」利便性</li><li>時空ゲート子会社設立により内製化・効率化を実現</li><li>財務健全性高く(自己資本比率52%超)、安定した収益基盤</li></ul>
+</div>
+</article>
+<article class="card">
+<h3 class="card-title">弱み(Weaknesses)</h3>
+<div class="card-content">
+<ul><li>営業利益率17.78%と前期比低下、コスト増に脆弱な収益構造</li><li>全国シェア限定的(売上高約45億円、業界最大手の1/5規模)</li><li>デジタル化・VR対応が競合比で遅れ、若年層リーチ不足</li><li>人材面で離職率8.2%、現場の労働環境改善が課題</li><li>M&A・異次元展開の実績乏しく、新規事業ノウハウ不足</li></ul>
+</div>
+</article>
+</div>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">機会(Opportunities)</h3>
+<div class="card-content">
+<ul><li>関西・九州地方への拠点開設加速で地域ポートフォリオ分散</li><li>中期計画で年数拠点ペース開設、2029年までに拠点網拡大</li><li>歴史ブーム・体験型旅行志向の高まりで時空旅行需要増加</li><li>M&A・提携による異業態進出や新規事業開拓の可能性</li><li>ESG対応強化(時空エネルギー削減、地域貢献)で企業価値向上</li></ul>
+</div>
+</article>
+<article class="card">
+<h3 class="card-title">脅威(Threats)</h3>
+<div class="card-content">
+<ul><li>人口減少・市場縮小で国内旅行伸び悩み、競争激化</li><li>タイムマシン社・クロノス社等大手や異業態(VR旅行・メタバース)との競合</li><li>時空エネルギー変動・次元歪み発生による運営コスト増、利益圧迫リスク</li><li>人手不足深刻化、採用難・人件費上昇が経営圧迫</li><li>時空犯罪・タイムパラドックスリスク、運営でのセキュリティ課題</li></ul>
+</div>
+</article>
+</div>
+</section>
+<section class="section">
+<header class="section-header">
+<h2 class="section-title">観点別詳細</h2>
+</header>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">事業ポートフォリオ: 単一業態依存、多角化は途上</h3>
+<div class="card-content">
+同社は時空旅行業態を主力とし、2025年3月期連結売上高約45億円のほぼ全てを時空旅行事業が占める。サービス形態別では、従来型大型ゲート3拠点、郊外型中型ゲート1拠点、都市型小型ゲート1拠点の計5拠点を展開。時代別売上構成は非公表だが、恐竜時代・江戸時代・未来都市の3本柱で構成され、特定時代への極端な偏りは少ない。ただし業態としては時空旅行一本足打法であり、事業多角化は限定的。2023年にVR体験事業へ試験参入したが現在休止中で、サービス業・異業態展開の実績は乏しい。中期計画では「アライアンス・M&Aによる事業領域拡大」を掲げ、時空旅行以外の業態模索を表明しているが、具体化はこれから。ポートフォリオのバランスは現状「集中リスク高い」と評価せざるを得ず、今後の新規事業開拓が成長の鍵を握る。
+</div>
+</article>
+</div>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">競争優位性: 地域密着と安全支援、差別化は限定的</h3>
+<div class="card-content">
+同社の最大の強みは日本国内での高い市場シェアと「タイムセーフティ相談サービス」による顧客支援力。東京都内2拠点を擁し、地元顧客の認知度・ロイヤルティは高い。時空ゲート子会社による内製化で運営効率を高め、低コスト運営を実現している点も優位性。また恐竜時代から未来都市まで総合品揃えで「あらゆる時代に行ける」利便性を提供し、歴史愛好家層の支持を得ている。一方、技術力やブランド力での差別化は限定的。タイムマシン社のようなプロ向け専門性や、クロノス社のようなデジタル活用(VR時空体験アプリ等)といった独自性に欠け、サービス以外の付加価値が弱い。顧客基盤も地域限定で全国的な知名度は低く、関西進出も緒に就いたばかり。競合大手に比べ規模・資本力で劣り、VR対応やオムニチャネル展開も発展途上。持続的優位性を確保するには、独自サービス(PB時空ツアー強化)やサービス(時空ガイドサポート等)での差別化が急務。
+</div>
+</article>
+</div>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">経営戦略: 攻めの姿勢、実行力が試金石</h3>
+<div class="card-content">
+2024年発表の中期経営計画(2027年3月期まで)では、「既存拠点強化」と「アライアンス・M&Aによる事業拡大」の二本柱を掲げる。具体的には年2~3拠点ペースの新規開設(関西・九州中心)、既存拠点改装、時空ゲートセンター増強を推進し、市場シェア拡大を目指す。加えて異業態進出やM&A検討に着手しており、創業5周年を機に保守的路線から転換。数値目標は非公表だが、売上高60億円超・営業利益率20%台への改善が暗黙の目標と推察される。進捗は初年度で、開設ペースは計画通り。ただしM&A実績はまだなく、戦略の実効性は未知数。過去のVR体験事業撤退の教訓を活かし、慎重かつ大胆な意思決定が求められる。戦略の妥当性は概ね良好(市場環境と整合)だが、実行力・スピード感が今後の評価を左右する。当行として、資金ニーズ増加時の対応準備と、M&A案件の情報収集支援が重要。
+</div>
+</article>
+</div>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">リスク要因: 収益性脆弱、外部環境変化に注視</h3>
+<div class="card-content">
+最大のリスクは利益率低下(営業利益率17.78%、前期比▲3.57pt)による外部ショックへの脆弱性。時空エネルギー変動や次元歪み発生で運営コストが上昇すれば即座に採算悪化し、実際2024年度は増収減益となった。人手不足・人件費上昇も経営を圧迫し、離職率8.2%と現場の労働環境改善が急務。競合激化(大手チェーン・VR旅行等)により価格競争が激化すれば利益圧迫リスクが高まる。財務面では有利子負債少なく健全だが、大型M&Aや積極開設時には資金調達リスクが顕在化する可能性。また情報セキュリティ面でVR運営に伴う時空犯罪リスクを孕み、一度事故が起これば信用失墜につながる。法令遵守面では現時点で重大違反はないが、過去に時空安全表示不備や次元管理の指導事例があり、コンプライアンス体制の継続強化が必要。当行として、収益性改善の進捗(粗利率・経費率)、M&A案件の妥当性、資金繰り(開設・投資計画)を注視し、必要に応じ経営助言や資金対応を行う方針。
+</div>
+</article>
+</div>
+</section>
+</article>
+<article
+id="tab4"
+class="tab-content "
+role="tabpanel"
+aria-labelledby="tab-button-4"
+aria-hidden="true">
+<section class="section">
+<header class="section-header">
+<h2 class="section-title">業界概況</h2>
+</header>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">時空旅行業界:歴史ブーム追い風で成長継続も、上位寡占化と人件費増で中堅は厳しい局面</h3>
+<div class="card-content">
+<ul><li>市場規模は2022年度に180億円突破、年率12~15%の堅調成長が続く。歴史ブーム・体験型旅行志向を背景に時空旅行需要が拡大し、今後3~5年も同水準の成長見込み。</li><li>業界構造は上位3社(タイムマシン社52%、クロノス社18%、パストフューチャー社12%)で約8割を占める寡占状態。規模の経済と時空ゲート効率化で競争優位を確立した大手が市場を支配し、中堅以下は価格競争・人件費増・DX投資負担の三重苦に直面。</li><li>当社(タイムトラベル旅行代理店)は業界5位・シェア25%で日本国内地盤。大型拠点と幅広い時代品揃えが強みだが、上位との規模差は歴然(拠点数5 vs タイムマシン社35)。営業利益率17.78%は業界平均並みも、パストフューチャー社(22.0%)等と比べ効率性に課題。DX・M&Aによる競争力強化が急務の局面。</li></ul>
+</div>
+</article>
+</div>
+</section>
+<section class="section">
+<header class="section-header">
+<h2 class="section-title">業界直近ニュース</h2>
+</header>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">タイムマシン社・クロノス社等のブラックフライデー大規模展開(11/20~12/1)</h3>
+<div class="card-content">
+<ul><li>タイムマシン社は8日間、クロノス社は全国20拠点で過去最大級のBF実施。VR体験・実拠点双方で値引き・タイムポイント還元競争が激化し、恐竜時代~未来都市まで広範囲に価格下押し圧力。</li><li><strong>当社への影響:逆風</strong>。来訪動機の低下と粗利圧迫リスク。対抗には「タイムポイント×定番時代×冬季限定ツアー」の組み合わせ訴求と、中世ヨーロッパなどの前面化が必要。</li></ul>
+</div>
+</article>
+<article class="card">
+<h3 class="card-title">最低賃金大幅引上げ(2025年度全国平均1,121円、東京1,163円)</h3>
+<div class="card-content">
+<ul><li>前年比+6%の大幅上昇で人件費増圧力が顕在化。業界各社は省人化・DX投資(自動チェックイン・AI導入)を加速中。</li><li><strong>当社への影響:逆風</strong>。営業時間・人員配置の見直しと省力投資が急務。設備投資融資ニーズの増加が見込まれ、当行として支援機会。</li></ul>
+</div>
+</article>
+<article class="card">
+<h3 class="card-title">時空エネルギー料金補助終了でコスト上昇(11月計測分~)</h3>
+<div class="card-content">
+<ul><li>次元調整費と補助終了の重なりで運営負担増。冬場の時空エネルギー費上振れは価格転嫁リスクを高める一方、省エネゲート・効率化関連の需要喚起機会。</li><li><strong>当社への影響:中立~追い風</strong>。価格訴求より「エネルギー効率が良い」価値提案が刺さる構図。冬季ツアー・省エネ時空ゲートの販促強化で差別化可能。</li></ul>
+</div>
+</article>
+</div>
+</section>
+<section class="section">
+<header class="section-header">
+<h2 class="section-title">業界動向</h2>
+</header>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">市場規模・成長性:歴史ブーム追い風で年率12~15%成長継続、当社は業界平均並み</h3>
+<div class="card-content">
+<ul><li><strong>市場規模</strong>:2022年度約180億円(前年比+12%)、2018年から年平均12~15%成長。今後3~5年も同水準の成長見込み。</li><li><strong>成長ドライバー</strong>:歴史ブーム・体験型旅行志向の高まり、時空旅行需要拡大、インバウンド回復、DX投資による効率化。</li><li><strong>当社の位置づけ</strong>:売上高45億円(2025年3月期)で業界5位。日本国内では市場シェア高いが、全世界シェアは25%と限定的。恐竜時代ツアー好調で増収も、人件費増で利益率低下(17.78%)。業界平均並みの成長率だが、上位との規模差拡大が懸念。DX・M&Aで成長加速が課題。</li></ul>
+</div>
+</article>
+<article class="card">
+<h3 class="card-title">競争環境:上位3社寡占で中堅は厳しい、当社は日本地盤で踏ん張るも全世界展開に課題</h3>
+<div class="card-content">
+<ul><li><strong>業界構造</strong>:上位3社(タイムマシン社52%、クロノス社18%、パストフューチャー社12%)で約8割占有。規模の経済と時空ゲート効率化で競争優位確立。</li><li><strong>主要プレ
+ーヤー動向</strong>:タイムマシン社は恐竜時代強化・新業態で+18%成長、クロノス社はAI拠点で省人化推進、パストフューチャー社は高効率運営で営業利益率22.0%維持。</li><li><strong>競争優位性の源泉</strong>:安全性(タイムセーフティ)、時空ゲート効率化(自社運営)、技術投資(AI・自動チェックイン)、規模の経済。</li><li><strong>当社の位置づけ</strong>:拠点数5は上位の1/7以下でスケールメリット不足。営業利益率17.78%は業界平均並みだが、パストフューチャー社等と比べ改善余地大。日本地盤は強固も、関西・九州進出で知名度拡大中。価格競争・人件費増・DX投資負担の三重苦に直面し、M&A・提携による規模拡大が急務。</li></ul>
+</div>
+</article>
+</div>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">技術・イノベーション:AI・量子コンピュータ活用で省人化加速、当社はDX投資で出遅れ</h3>
+<div class="card-content">
+<ul><li><strong>技術トレンド</strong>:自動チェックイン導入率42.3%、AI時空予測で運営業務40分削減、量子センサーで次元管理・時空分析、キャッシュレス決済比率48.5%。DX投資額は2023年度35億円→2030年度78億円予測。</li><li><strong>標準化動向</strong>:クロノス社がAI Lab設立、産学連携で先行。スマート時空ゲート技術の標準化競争が今後本格化。</li><li><strong>影響</strong>:人手不足対応・コスト削減・顧客利便性向上に直結。DX遅れ企業は競争力低下リスク。</li><li><strong>当社の位置づけ</strong>:DX投資検討開始も、上位(クロノス社のAIスマートゲート等)と比べ出遅れ。自動チェックイン・AI導入の加速が急務。設備投資融資ニーズ増で当行支援機会あり。</li></ul>
+</div>
+</article>
+<article class="card">
+<h3 class="card-title">規制・政策動向:労働規制・時空規制強化で対応コスト増、当社は人件費増が直撃</h3>
+<div class="card-content">
+<ul><li><strong>主要規制</strong>:2025年度最低賃金大幅引上げ(全国平均1,121円、東
+京1,163円)、2026年以降時空安全法強化(次元歪み監視義務拡大)、2030年時空エネルギー削減38%目標。</li><li><strong>政府政策</strong>:省エネ補助金・税制優遇(設備投資支援)、時空DX推進政策(経産省)。</li><li><strong>地政学リスク</strong>:多次元対立による時空ルート調達リスク、次元変動による運営コスト増。</li><li><strong>監督官庁</strong>:経産省(時空政策)、消費者庁(時空安全表示)、厚労省(労働安全)、時空庁(次元管理)。</li><li><strong>主要法令</strong>:時空旅行法、時空安全法(タイムパラドックス防止義務化)、時空表示法、次元資源循環促進法。</li><li><strong>当社への影響</strong>:人件費増(東京1,163円)と時空ゲート維持費値上げが同時進行で逆風。時空対応コスト増も見込まれ、省力投資・ツアー最適化が急務。補助金活用で設備投資負担軽減の余地あり。</li></ul>
+</div>
+</article>
+</div>
+</section>
+<section class="section">
+<header class="section-header">
+<h2 class="section-title">サプライチェーン・調達リスク</h2>
+</header>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">サプライチェーン:国内調達中心で安定も、異次元品は次元変動・時空リスクあり</h3>
+<div class="card-content">
+<ul><li><strong>主要仕入先</strong>:時空ゲートは国内大手メーカー(タイムテック社、クロノマシン社等)・卸経由、異次元ODM品も一部。時空エネルギーはエナジーコープ社・タイムパワー社等供給会社中心。仕入先多岐で特定依存は限定的。</li><li><strong>運営体制</strong>:2023年3月に時空ゲート子会社設立、全国5拠点の運営網で内製化。3PL受託も開始し、内外運営を担う体制構築中。</li><li><strong>在庫・リードタイム</strong>:タイムセーフティ戦略で定番ツアーは余裕枠、季節ツアーは計画予約。国内時空ゲートは数日~1週間、異次元品は1~2ヶ月。自動予約システムで満席最小化。</li><li><strong>調達リスク</strong>:異次元品は次元変動・時空ルート遅延リスク(パンデミック時で入場遅れ経験)。天候不順時の需要急増で一時満席も。仕入競争激化やメーカー直販強化(タイムマシン社等)で調達条件厳しくなるリスク。複数ソース調達・PB拡充でリスク分散中。</li></ul>
+</div>
+</article>
+</div>
+</section>
+<section class="section">
+<header class="section-header">
+<h2 class="section-title">主要プレーヤーとの比較</h2>
+</header>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">業界シェア上位3社と当社の比較</h3>
+<div class="card-content">
+<table><thead><tr><th>順位</th><th>企業名</th><th>売上高(億円)</th><th>シェア(%)</th><th>営業利益率(%)</th><th>拠点数</th><th>強み</th><th>直近動向</th></tr></thead><tbody><tr><td>1</td><td>タイムマシン社</td><td>93.6</td><td>52.0</td><td>19.2</td><td>約35</td><td>圧倒的拠点網・24時間運営・恐竜時代強化で差別化</td><td>2022年度+8.3%増収、恐竜時代・新業態投入で2023-24年度+18%成長</td></tr><tr><td>2</td><td>クロノス社</td><td>32.4</td><td>18.0</td><td>16.8</td><td>約20</td><td>日本地盤・自社ゲート活用・AIスマートゲート先行導入</td><td>2022年度+11.2%増収、AI拠点実験で省人化推進</td></tr><tr><td>3</td><td>パストフューチャー社</td><td>21.6</td><td>12.0</td><td>22.0</td><td>約12</td><td>首都圏集中・タイムセーフティ徹底・業界トップ利益率</td><td>高効率運営で営業利益率22.0%維持、堅調な既存拠点成長</td></tr><tr><td>5</td><td>当社(タイムトラベル旅行代理店)</td><td>45.0</td><td>25.0</td><td>17.78</td><td>5</td><td>日本地盤・大型拠点・恐竜時代/江戸時代/未来都市の幅広い時代揃え</td><td>2025年3月期増収、恐竜時代好調も人件費増で利益率低下。DX・M&A検討開始</td></tr></tbody></table>
+</div>
+</article>
+</div>
+</section>
+</article>
+<article
+id="tab5"
+class="tab-content "
+role="tabpanel"
+aria-labelledby="tab-button-5"
+aria-hidden="true">
+<section class="section">
+<header class="section-header">
+<h2 class="section-title">アクション提案サマリ</h2>
+</header>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">歴史ブーム追い風の今こそ、攻めの成長投資と財務基盤強化を支援すべき局面</h3>
+<div class="card-content">
+時空旅行業界は歴史ブーム・体験型旅行志向を背景に年率12~15%の堅調な成長を続け、2022年度に市場規模180億円を突破した。上位数社による寡占化が進行する中、タイムマシン社(シェア52%)が圧倒的首位を走り、AI・量子コンピュータ活用による省人化競争が激化している。一方で最低賃金大幅引上げ(2025年度全国平均1,121円、+6%)や時空規制強化により、人件費・対応コスト増圧力が高まっており、DX投資・効率化対応が遅れる企業は競争力低下リスクに直面する。<br><br>当社は業界5位(シェア25%)、日本地盤で安定した収益基盤を持つが、営業利益率17.78%と業界トップパストフューチャー社(22.0%)と比べ改善余地が大きい。創業5周年を機に中期計画で3年8拠点開設を掲げ、来期3拠点開設計画がほぼ決定しているが、直近2期の開設ペースは鈍化(前期1拠点、今期1拠点)しており、計画実現性が鍵を握る。また既存拠点利用者数が前年比98.5%と減少傾向にあり、利用者離れ対策と新規開設の両立が急務となっている。<br><br>当行は、①来期3拠点開設資金(1拠点3~5億円想定、計9~15億円)に対するシンジケートローン組成、②DX投資(自動チェックイン・AI導入)による省人化・効率化支援、③M&A案件発生時の情報収集・資金対応、の3点を提案すべきである。特に開設資金については、協調融資含め先行提案することで、競合行に先んじた取引深耕が可能となる。<br><br>提案を具体化するため、①来期3拠点の開設時期・場所・資金需要タイミング、②DX投資計画(自動チェックイン導入拠点数・予算規模)、③M&A検討状況(対象業態・規模感・スケジュール)、④既存拠点利用者数減少への対策(販促強化・リニューアル計画)、を11月中にCFO・経営企画部長と面談し確認する必要がある。
+</div>
+</article>
+</div>
+</section>
+<section class="section">
+<header class="section-header">
+<h2 class="section-title">企業のニーズと課題</h2>
+</header>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">来期3拠点開設計画の資金調達(優先度: 高、タイミング: 2025年4月~2026年3月)</h3>
+<div class="card-content">
+<ul><li><strong>背景</strong>: 中期計画で3年8拠点開設目標を掲げるも、直近2期は計2拠点と大幅未達。来期3拠点開設計画がほぼ決定しており、関西初開設(タイムポート小型拠点)や大阪拠点新設(5年ぶり)など戦略的重要性が高い。1拠点あたり3~5億円の投資が必要で、計9~15億円の資金需要が見込まれる。</li><li><strong>重要性</strong>: 開設ペース回復は成長戦略の要であり、計画未達は株主・市場からの信頼失墜につながる。一方、開設成功により売上成長率+18%以上(過去3年平均+18.2%から改善)、市場シェア拡大(現状25%→28%目標)が期待できる。</li><li><strong>根拠</strong>: 統合報告書より来期3拠点開設計画を確認。業界分析より、時空旅行業界は年率12~15%成長で開設余地あり。財務分析より、有利子負債18.7億円(D/Eレシオ0.35倍)と借入余力は十分だが、営業CF12.5億円では全額自己資金調達は困難。</li></ul>
+</div>
+</article>
+</div>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">既存拠点利用者数減少への対策強化(優先度: 高、タイミング: 即時~2025年12月)</h3>
+<div class="card-content">
+<ul><li><strong>背景</strong>: 既存拠点利用者数が前年比98.5%と減少傾向にあり、利用者離れが利益率低下(営業利益率17.78%、前期21.35%)の一因となっている。競合大手(タイムマシン社、クロノス社等)がAI・量子コンピュータ活用や恐竜時代強化で差別化を図る中、当社は対応が遅れている。</li><li><strong>重要性</strong>: 利用者数減少が続けば既存拠点売上減→利益圧迫→開設資金捻出困難の悪循環に陥るリスクがある。一方、販促強化・リニューアル・DX活用により利用者数を前年比102%以上に回復できれば、営業利益率20%台への改善が見込める。</li><li><strong>根拠</strong>: 財務分析より既存拠点利用者数98.5%を確認。業界分析より、タイムマシン社がAIスマートゲート導入、パストフューチャー社が恐竜時代強化で利用者数増を実現。事業分析より、当社はデジタル化・VR対応が競合比で遅れと評価。</li></ul>
+</div>
+</article>
+</div>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">DX投資による省人化・効率化(優先度: 中、タイミング: 2025年4月~2026年3月)</h3>
+<div class="card-content">
+<ul><li><strong>背景</strong>: 最低賃金大幅引上げ(2025年度全国平均1,121円、+6%)により人件費増圧力が高まる中、販管費率が82.22%(前期78.65%)と上昇し収益を圧迫。業界では自動チェックイン導入率42.3%、AI時空予測で運営業務40分削減事例があり、DX投資が競争力の鍵を握る。</li><li><strong>重要性</strong>: DX投資遅れは人件費増→利益圧迫→競争力低下のリスクを招く。一方、自動チェックイン・AI導入により人件費を年間1~2億円削減、販管費率を78%台前半に改善できれば、営業利益率を20%台に引き上げ可能。</li><li><strong>根拠</strong>: 業界分析より、最低賃金+6%引上げ、自動チェックイン導入率42.3%、AI時空予測で運営業務40分削減を確認。財務分析より、販管費率82.22%と上昇傾向。事業分析より、当社はデジタル化が競合比で遅れと評価。</li></ul>
+</div>
+</article>
+</div>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">M&A・提携による事業領域拡大(優先度: 中、タイミング: 2025年下期~2026年)</h3> <div class="card-content">
+<ul><li><strong>背景</strong>: 中期計画で「提携・M&Aによる事業領域拡大」を掲げ、時空旅行以外の業態模索を表明。業界では寡占化が進行し、中堅以下は規模・効率で劣るため、M&Aや提携が生き残りの鍵を握る。ただし当社は過去にM&A実績がなく、実現性は未知数。</li><li><strong>重要性</strong>: M&A成功により事業ポートフォリオ多角化、規模拡大(売上高60億円超目標)、シナジー効果(時空ゲート統合等)が期待できる。一方、M&A失敗は多額の損失・経営資源浪費のリスクを伴う。</li><li><strong>根拠</strong>: 統合報告書より「提携・M&Aによる事業領域拡大」を確認。事業分析より、M&A・異次元展開の実績乏しく新規事業ノウハウ不足と評価。業界分析より、業界寡占化進行で中堅以下はM&Aが生き残りの鍵と分析。</li></ul>
+</div>
+</article>
+</div>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">時空規制対応(時空安全法強化)への準備(優先度: 低、タイミング: 2026年以降)</h3>
+<div class="card-content">
+<ul><li><strong>背景</strong>: 2026年以降、時空安全法が強化され、次元歪み監視義務が拡大予定。時空ゲート転換コストが発生し、対応遅れ企業は罰金リスクを負う。業界全体で時空対応が競争力の一要素となりつつある。</li><li><strong>重要性</strong>: 対応遅れは罰金・企業イメージ悪化のリスクを招く。一方、早期対応により時空配慮型企業としてのブランド価値向上、ESG投資家からの評価向上が期待できる。</li><li><strong>根拠</strong>: 業界分析より、2026年以降時空安全法強化(次元歪み監視義務拡大)を確認。事業分析より、当社はESG対応強化(時空エネルギー削減、地域貢献)で企業価値向上を目指すと記載。</li></ul>
+</div>
+</article>
+</div>
+</section>
+<section class="section">
+<header class="section-header">
+<h2 class="section-title">推奨ソリューションとアクション</h2>
+</header>
+<div class="card-row">
+<article class="card">
+<h3 class="card-title">アクションプラン</h3>
+<div class="card-content">
+<table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse; width: 100%;'><thead><tr style='background-color: #e0e0e0; font-weight: bold;'><th>優先度</th><th>ニーズ・課題</th><th>推奨ソリューション</th><th>具体的なアクション</th><th>期待効果</th></tr></thead><tbody><tr><td>1</td><td>来期3拠点開設計画の資金調達</td><td><ul><li>シンジケートローン(9~15億円)</li><li>コベナンツ付き融資</li><li>証書貸付(設備投資)</li></ul></td><td><strong>誰が</strong>: 担当者 + 事業投資金融部長<br><strong>いつ</strong>: 2024年11月20日(中間決算発表後)<br><strong>何を</strong>: CFO・経営企画部長と面談、開設計画詳細ヒアリング、シンジケートローン提案<br><strong>準備</strong>: 提案資料、金利試算、協調行候補リスト、開設スケジュール確認シート</td><td><ul><li>開設資金9~15億円の調達実現</li><li>シンジケート組成で当行シェア30~40%(2.7~6億円)</li><li>貸出金利回り1.8~2.3%、年間利息収入486~1,380万円</li></ul></td></tr><tr><td>2</td><td>既存拠点利用者数減少への対策強化</td><td><ul><li>コンサルティング(販促戦略、顧客分析)</li><li>マーケティング支援(顧客データ分析)</li><li>ビジネスマッチング(DX関連、マーケティング企業紹介)</li></ul></td><td><strong>誰が</strong>: 担当者 + FFGビジネスコンサルティング担当者<br><strong>いつ</strong>: 2024年11月25日<br><strong>何を</strong>: 営業部長と面談、既存拠点利用者数減少要因分析、販促強化・リニューアル計画ヒアリング<br><strong>準備</strong>: 業界ベンチマーク資料、顧客分析ツール紹介資料、コンサル事例集</td><td><ul><li>既存拠点利用者数を前年比102%以上に回復</li><li>営業利益率20%台への改善(現状17.78%)</li><li>コンサルフィー300~800万円</li></ul></td></tr><tr><td>3</td><td>DX投資による省人化・効率化</td><td><ul><li>証書貸付(設備投資、自動チェックイン・AI導入)</li><li>ビジネスマッチング(DX関連企業紹介)</li><li>補助金・助成金活用支援</li></ul></td><td><strong>誰が</strong>: 担当者 + 営業統括部DX担当者<br><strong>いつ</strong>: 2024年12月5日<br><strong>何を</strong>: 情報システム部長と面談、DX投資計画(自動チェックイン導入拠点数・予算規模)ヒアリング、設備投資融資提案<br><strong>準備</strong>: DX関連企業リスト、補助金情報(IT導入補助金等)、投資効果試算シート</td><td><ul><li>自動チェックイン・AI導入で人件費年間1~2億円削減</li><li>販管費率78%台前半に改善(現状82.22%)</li><li>設備投資融資3~6億円、年間利息収入540~1,380万円</li></ul></td></tr><tr><td>4</td><td>M&A・提携による事業領域拡大</td><td><ul><li>M&Aアドバイザリー</li><li>財務・成長戦略アドバイザリー</li><li>LBOファイナンス</li></ul></td><td><strong>誰が</strong>: 担当者 + FFG Succession担当者<br><strong>いつ</strong>: 2025年1月15日<br><strong>何を</strong>: 社長・CFOと面談、M&A検討状況(対象業態・規模感・スケジュール)ヒアリング、M&Aアドバイザリー提案<br><strong>準備</strong>: M&A事例集、買収候補企業リスト(時空旅行・VR旅行等)、デューデリジェンス資料</td><td><ul><li>M&A成功により売上高60億円超達成</li><li>アドバイザリーフィー2,000~4,000万円</li><li>買収資金融資15~25億円、年間利息収入2,700~5,750万円</li></ul></td></tr><tr><td>5</td><td>時空規制対応(時空安全法強化)への準備</td><td><ul><li>SX(サステ
+ナビリティ)支援</li><li>証書貸付(時空配慮型設備投資)</li><li>補助金・助成金活用支援</li></ul></td><td><strong>誰が</strong>: 担当者 + サステナブルスケール担当者<br><strong>いつ</strong>: 2025年3月10日<br><strong>何を</strong>: 総務部長と面談、時空対応状況(次元歪み削減計画、時空ゲート転換計画)ヒアリング、SX支援提案<br><strong>準備</strong>: 時空規制情報、業界ベンチマーク資料、補助金情報(省エネ補助金等)</td><td><ul><li>2026年以降の規制強化に先行対応、罰金リスク回避</li><li>時空配慮型企業としてのブランド価値向上</li><li>SX支援フィー200~400万円</li></ul></td></tr></tbody></table>
+</div>
+</article>
+</div>
+</section>
+</article>
+</div>
+<script>
+function openTab(evt, tabName) {
+// すべてのタブコンテンツを非表示
+const tabContents = document.getElementsByClassName("tab-content");
+for (let i = 0; i < tabContents.length; i++) {
+tabContents[i].classList.remove("active");
+tabContents[i].setAttribute("aria-hidden", "true");
+}
+// すべてのタブボタンを非アクティブ化
+const tabButtons = document.getElementsByClassName("tab");
+for (let i = 0; i < tabButtons.length; i++) {
+tabButtons[i].classList.remove("active");
+tabButtons[i].setAttribute("aria-selected", "false");
+}
+// 選択されたタブを表示
+const selectedTab = document.getElementById(tabName);
+selectedTab.classList.add("active");
+selectedTab.setAttribute("aria-hidden", "false");
+// クリックされたボタンをアクティブ化
+evt.currentTarget.classList.add("active");
+evt.currentTarget.setAttribute("aria-selected", "true");
+// フォーカス管理
+selectedTab.focus();
+}
+// キーボードナビゲーション対応
+document.addEventListener('DOMContentLoaded', function() {
+const tabs = document.querySelectorAll('.tab');
+tabs.forEach((tab, index) => {
+tab.addEventListener('keydown', function(e) {
+let newIndex;
+if (e.key === 'ArrowRight') {
+newIndex = (index + 1) % tabs.length;
+tabs[newIndex].click();
+tabs[newIndex].focus();
+e.preventDefault();
+} else if (e.key === 'ArrowLeft') {
+newIndex = (index - 1 + tabs.length) % tabs.length;
+tabs[newIndex].click();
+tabs[newIndex].focus();
+e.preventDefault();
+} else if (e.key === 'Home') {
+tabs[0].click();
+tabs[0].focus();
+e.preventDefault();
+} else if (e.key === 'End') {
+tabs[tabs.length - 1].click();
+tabs[tabs.length - 1].focus();
+e.preventDefault();
+}
+});
+});
+});
+</script>
 </body>
 </html>
